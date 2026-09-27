@@ -1,0 +1,15 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RankForge</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><div class="nav"><b>RankForge</b><span>SEO & Social Optimization</span></div></header>
+<main>
+<section class="hero"><h1>RankForge SEO Tool</h1><p>Generate platform-ready SEO and audit public URLs.</p></section>
+<section class="grid">
+<div class="card"><h2>SEO Generator</h2>
+<input id="topic" placeholder="Topic / Title"><textarea id="description" placeholder="Short description"></textarea>
+<select id="platform"><option>General</option><option>Facebook</option><option>Instagram</option><option>Pinterest</option><option>LinkedIn</option><option>Fiverr</option><option>YouTube</option></select>
+<button onclick="generate()">Generate SEO</button><pre id="gen"></pre></div>
+<div class="card"><h2>URL SEO Analyzer</h2><input id="url" placeholder="https://example.com"><button onclick="audit()">Analyze URL</button><div id="score"></div><pre id="audit"></pre></div>
+</section>
+<section class="card"><h2>Admin</h2><div id="login"><input id="user" placeholder="Admin username"><input id="pass" type="password" placeholder="Admin password"><button onclick="login()">Login</button></div><div id="dash" hidden><button onclick="users()">Refresh users</button><button onclick="logout()">Logout</button><div id="userlist"></div></div><small>Admin credentials are configured in Netlify environment variables.</small></section>
+</main><script src="/app.js"></script></body></html>
