@@ -18,4 +18,4 @@ Required environment variables:
 
 - ADMIN_USER
 - ADMIN_PASS
-- SESSION_SECRET
+- SESSION_SECRET .
